@@ -10,28 +10,10 @@
     </head>
     <body>
         <h1> ToDo List </h1>
-        
-        <table>
-            <tr>
-                <th>Task</th>
-                <th>Added</th>
-                <th>Actions</th>
-            </tr>
-            {% for task in tasks %}
-                <tr>
-                    <td>{{ task.content }}</td>
-                    <td>
-                        <a href='/delete/{{task.id}}'>Delete</a>
-                        <br>
-                        <a href='/update/{{task.id}}'>Update</a>
-                    </td>
-                </tr>
-            {% endfor %}
-        </table>
 
         <form action='/' method='POST'>
             <label>Input your task here:</label>
-            <input type='text' name='content' id='content'>
+            <input type='text' id="task_id" name='task_name'>
             <input type="submit" value="Submit your task">
         </form>
         
