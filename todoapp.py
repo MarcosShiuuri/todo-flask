@@ -1,5 +1,5 @@
 from flask import Flask, render_template as rt, request, redirect
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchem
 
 app = Flask(__name__, instance_relative_config=True)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo_flask.db'
