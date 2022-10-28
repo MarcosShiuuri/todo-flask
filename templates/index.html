@@ -6,33 +6,34 @@
         <title>ToDo Flask App</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
     </head>
-    <body>
-        <h1> ToDo List </h1>
+    <body style="background-color:#3474B5;">
+        <h1 style="color:#fff;"> ToDo List </h1>
         
-        <table>
-            <tr>
-                <th>Task</th>
-            </tr>
-            {% for task in tasks %}
-                <tr>
-                    <td>{{ task.content }}</td>
-                    <td>
-                        <a href='/delete/{{task.id}}'>Delete</a>
-                        <br>
-                        <a href='/update/{{task.id}}'>Update</a>
-                    </td>
-                </tr>
-                {% endfor %}
-        </table>
-
         <form action='/' method='POST'>
-            <label>Input your task here:</label>
-            <input type='text' id="task_id" name='task_content'>
+            <label style="color:#fff;">Input your task here:</label>
+            <input type='text' id="task_id" name='task_content' maxlength="35">
             <input type="submit" value="Submit your task">
         </form>
         
+        <br>
+
+        <table style="color:#fff; border: 3px solid; border-collapse: collapse; width: 32%;">
+            <tr>
+                <th style="color:#fff;">Current tasks</th>
+            </tr>
+            {% for task in tasks %}
+                <tr>
+                    <td style="border: 3px solid; padding: 5px;">
+                        {{ task.content }}
+                    </td>
+                    <td style="border: 3px solid; text-align: center; width: 25%;">
+                        <a href='/update/{{task.id}}'>Update</a>
+                        <a href='/delete/{{task.id}}'>Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
         <script src="" async defer></script>
     </body>
 </html>
