@@ -1,5 +1,5 @@
 # FlaskTodo
-ToDo app using Flask, HTML5 and CSS 
+ToDo app using Python Flask, HTML5 and CSS 
 
 What's need to be done yet:
   Use CSS for style
