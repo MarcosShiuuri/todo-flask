@@ -39,7 +39,7 @@ def update(id):
             db.session.commit()
             return redirect('/')
         except:
-            return 'Deu pra atualizar não!'
+            return rt('error.html')
 
     else:
         return rt('update.html', task=task)
@@ -52,4 +52,4 @@ def delete(id):
         db.session.commit()
         return redirect('/')
     except:
-        return 'Deu pra deletar não!'
+        return rt('error.html')
