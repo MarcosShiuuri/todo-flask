@@ -1,4 +1,4 @@
-#To-do app using Python Flask.
+# To-do app using Python Flask.
 
 With this app a user can create a new task and update or delete an existing one, following the CRUD principles.
 The tasks created are placed in a table with the options to update or read, using SQLAlchemy as a database.
