@@ -7,7 +7,6 @@ The goal of this project was to improve my knowledge of creating webapps using F
 The database used was SQLAlchemy, because it was faster and easier to implement for this simple project.
 
 VERSION OF WHAT WAS USED:
-
 	Python - v3.11.0
 	Flask - v2.2.2
 	SQLAlchemy - v1.4.42
