@@ -25,7 +25,7 @@ def homepage():
             db.session.commit()
             return redirect('/')
         except:
-            return 'Deu para adicionar não!'
+            return rt('error.html')
     else:
         tasks = Task.query.order_by(Task.id).all()
         return rt('index.html', tasks=tasks)
